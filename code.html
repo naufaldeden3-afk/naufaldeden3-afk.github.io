@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Coding untuk Pemula - Panduan Lengkap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .code-example {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            font-family: monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 10px;
+            border: 1px solid #ffeaa7;
+            margin: 10px 0;
+        }
+        .exercise {
+            background-color: #d4edda;
+            padding: 10px;
+            border: 1px solid #c3e6cb;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Belajar Coding untuk Pemula</h1>
+        <p>Panduan lengkap dan mendalam untuk memulai perjalanan coding dari nol. Belajar step-by-step dengan contoh praktis!</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#instalasi">Instalasi</a>
+        <a href="#tutorial">Tutorial</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#debugging">Debugging</a>
+        <a href="#resources">Sumber Daya</a>
+        <a href="#tips">Tips & FAQ</a>
+    </nav>
+    
+    <div class="container">
+        <section id="home">
+            <h2>Apa itu Coding dan Mengapa Belajar Coding?</h2>
+            <p>Coding (atau pemrograman) adalah cara kita berkomunikasi dengan komputer untuk membuat aplikasi, website, game, atau bahkan robot. Untuk pemula, coding terlihat sulit, tapi sebenarnya seperti belajar bahasa baru. Mulailah dengan dasar-dasar, dan Anda bisa membangun apa saja!</p>
+            <p><strong>Manfaat belajar coding:</strong></p>
+            <ul>
+                <li>Meningkatkan logika berpikir dan problem-solving.</li>
+                <li>Membuka peluang karir di tech (developer, data analyst, dll.).</li>
+                <li>Membuat proyek kreatif seperti website pribadi atau app sederhana.</li>
+            </ul>
+            <p>Website ini dirancang untuk pemula absolut: dari nol hingga bisa membuat proyek pertama. Ikuti langkah demi langkah!</p>
+        </section>
+        
+        <section id="instalasi">
+            <h2>Panduan Instalasi Alat Coding</h2>
+            <p>Sebelum mulai, Anda perlu alat dasar. Jangan khawatir, semuanya gratis!</p>
+            <h3>1. Editor Kode (VS Code)</h3>
+            <p>Download dari <a href="https://code.visualstudio.com" target="_blank">code.visualstudio.com</a>. Ini seperti notepad canggih untuk menulis kode.</p>
+            <h3>2. Browser (Chrome atau Firefox)</h3>
+            <p>Untuk melihat hasil HTML/CSS/JS. Sudah ada di komputer Anda.</p>
+            <h3>3. Python (untuk bahasa pemrograman)</h3>
+            <p>Download dari <a href="https://www.python.org" target="_blank">python.org</a>. Pilih versi terbaru, ikuti instruksi instalasi.</p>
+            <div class="highlight">
+                <strong>Tip:</strong> Setelah instal Python, buka terminal (Command Prompt di Windows) dan ketik <code>python --version</code> untuk memastikan terinstal.
+            </div>
+        </section>
+        
+        <section id="tutorial">
+            <h2>Tutorial Lengkap: Dari Dasar hingga Lanjutan</h2>
+            <p>Kami mulai dengan HTML (untuk web), lalu CSS (styling), JavaScript (interaktivitas), dan Python (logika).</p>
+            
+            <h3>1. HTML: Struktur Halaman Web</h3>
+            <p>HTML adalah "tulang" website. Tag seperti &lt;h1&gt; untuk judul, &lt;p&gt; untuk paragraf.</p>
+            <div class="code-example">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;&lt;title&gt;Halaman Pertama&lt;/title&gt;&lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;Selamat Datang!&lt;/h1&gt;<br>
+                &lt;p&gt;Ini adalah paragraf pertama saya.&lt;/p&gt;<br>
+                &lt;ul&gt;<br>
+                &lt;li&gt;Item 1&lt;/li&gt;<br>
+                &lt;li&gt;Item 2&lt;/li&gt;<br>
+                &lt;/ul&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+            <div class="exercise">
+                <strong>Latihan:</strong> Buat file HTML baru, salin kode di atas, tambahkan gambar dengan &lt;img src="gambar.jpg" alt="Deskripsi"&gt;, lalu buka di browser.
+            </div>
+            
+            <h3>2. CSS: Membuat Website Cantik</h3>
+            <p>CSS menambahkan warna, font, dan layout. Tambahkan ke HTML dengan tag &lt;style&gt; atau file terpisah.</p>
+            <div class="code-example">
+                body { background-color: lightblue; }<br>
+                h1 { color: red; text-align: center; }<br>
+                p { font-size: 18px; }
+            </div>
+            <div class="exercise">
+                <strong>Latihan:</strong> Tambahkan CSS ke file HTML sebelumnya. Ubah warna latar belakang dan font.
+            </div>
+            
+            <h3>3. JavaScript: Membuat Interaktivitas</h3>
+            <p>JS membuat website "hidup". Contoh: tombol yang mengubah teks saat diklik.</p>
+            <div class="code-example">
+                &lt;button onclick="ubahTeks()"&gt;Klik Saya&lt;/button&gt;<br>
+                &lt;p id="teks"&gt;Ini teks awal.&lt;/p&gt;<br>
+                &lt;script&gt;<br>
+                function ubahTeks() {<br>
+                document.getElementById("teks").innerHTML = "Teks berubah!";<br>
+                }<br>
+                &lt;/script&gt;
+            </div>
+            <div class="exercise">
+                <strong>Latihan:</strong> Tambahkan ke file HTML. Klik tombol dan lihat perubahan.
+            </div>
+            
+            <h3>4. Python: Logika dan Algoritma</h3>
+            <p>Python cocok untuk pemula. Fokus pada variabel, loop, dan kondisi.</p>
+            <div class="code-example">
+                # Program sederhana<br>
+                nama = input("Masukkan nama: ")<br>
+                umur = int(input("Masukkan umur: "))<br>
+                if umur >= 18:<br>
+                print(f"Halo {nama}, Anda dewasa!")<br>
+                else:<br>
+                print(f"Halo {nama}, Anda masih muda!")<br>
+                <br>
+                # Loop sederhana<br>
+                for i in range(5):<br>
+                print(f"Hitungan: {i+1}")
+            </div>
+            <div class="exercise">
+                <strong>Latihan:</strong> Buat file .py, salin kode, jalankan di terminal. Modifikasi untuk menghitung angka genap.
+            </div>
+        </section>
+        
+        <section id="proyek">
+            <h2>Proyek Sederhana untuk Pemula</h2>
+            <p>Setelah belajar dasar, buat proyek untuk menguji kemampuan.</p>
+            <h3>Proyek 1: Kalkulator Sederhana (Python)</h3>
+            <div class="code-example">
+                def kalkulator():<br>
+                a = float(input("Angka pertama: "))<br>
+                b = float(input("Angka kedua: "))<br>
+                op = input("Operasi (+, -, *, /): ")<br>
+                if op == "+":<br>
+                print(a + b)<br>
+                elif op == "-":<br>
+                print(a - b)<br>
+                # Tambahkan lainnya<br>
+                kalkulator()<br>
+                kalkulator()
+            </div>
+            <p>Jalankan dan coba hitung!</p>
+            
+            <h3>Proyek 2: Website Portofolio (HTML/CSS)</h3>
+            <p>Gabungkan HTML dan CSS untuk membuat halaman tentang diri Anda. Tambahkan foto dan link.</p>
+        </section>
+        
+        <section id="debugging">
+            <h2>Debugging: Memperbaiki Kesalahan Kode</h2>
+            <p>Kesalahan umum: typo, kurung tidak tertutup, atau logika salah.</p>
+            <ul>
+                <li>Baca pesan error dengan teliti.</li>
+                <li>Gunakan print() di Python untuk melihat nilai variabel.</li>
+                <li>Di browser, buka Developer Tools (F12) untuk JS/HTML.</li>
+            </ul>
+            <div class="highlight">
+                <strong>Contoh Error:</strong> Jika kode Python gagal, pastikan indentasi benar (Python sensitif terhadap spasi).
+            </div>
+        </section>
+        
+        <section id="resources">
+            <h2>Sumber Daya Gratis dan Berguna</h2>
+            <ul>
+                <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a> - Kursus interaktif dengan latihan.</li>
+                <li><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a> - Sertifikat gratis setelah selesai.</li>
+                <li><a href="https://www.python.org" target="_blank">Python Docs</a> - Dokumentasi lengkap.</li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a> - Referensi cepat HTML/CSS/JS.</li>
+                <li><a href="https://www.khanacademy.org/computing" target="_blank">Khan Academy</a> - Video tutorial gratis.</li>
+                <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a> - Tanyakan pertanyaan coding.</li>
+            </ul>
+        </section>
+        
+        <section id="tips">
+            <h2>Tips untuk Sukses & FAQ</h2>
+            <h3>Tips:</h3>
+            <ul>
+                <li>Praktik harian: Buat "coding journal" untuk catat progress.</li>
+                <li>Belajar dari proyek: Jangan hanya baca, buat sesuatu.</li>
+                <li>Bergabung komunitas: Reddit r/learnprogramming atau Discord server coding.</li>
+                <li>Jangan frustrasi: Semua programmer pernah salah.</li>
+            </ul>
+            <h3>FAQ:</h3>
+            <ul>
+                <li><strong>Apakah saya perlu matematika tinggi?</strong> Tidak, dasar aritmatika cukup.</li>
+                <li><strong>Berapa lama untuk mahir?</strong> 3-6 bulan konsisten untuk dasar.</li>
+                <li><strong>Apa bahasa terbaik untuk pemula?</strong> Python atau JavaScript.</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Website Belajar Coding. Dibuat untuk pemula! Jika ada pertanyaan, hubungi via email.</p>
+    </footer>
+    
+    <script>
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        
+        // Contoh interaktivitas sederhana: Alert saat klik header
+        document.querySelector('header').addEventListener('click', () => {
+            alert('Selamat belajar coding!');
+        });
+    </script>
+</body>
+</html>
